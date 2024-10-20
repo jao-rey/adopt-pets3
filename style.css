@@ -5,6 +5,10 @@ html, body {
     font-family: "Source Sans 3", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top-section-wrapper {
     background-color: #001D37;
     overflow: hidden;  /* If the screen is small, this will remove the horizontal scroll bar. */
