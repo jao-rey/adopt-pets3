@@ -7,3 +7,15 @@ async function start() {
 }
 start()
 
+async function start() {
+   const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
+   const petsData = await petsPromise.json()
+   petsData.forEach(pet => {   // This will loop to an array with elements made of objects.
+      console.log(pet.species)
+      // console.log("hello!")
+   });
+}
+start()
+
+
+
